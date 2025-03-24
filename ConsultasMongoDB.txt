@@ -1,0 +1,39 @@
+1.- Encontrar empleados del departamento de Ventas
+
+{ departamento: { $eq: "Ventas" } }
+
+2.- Encontrar empleados que no sean del departamento de IT
+
+{ departamento: { $ne: "IT" } }
+
+3.- Encontrar empleados con salario mayor a 55000
+
+{ "salario": { "$gt": 55000 } }
+
+4.- Encontrar empleados con edad menor o igual a 35 años
+
+{ "edad": { "$lte": 35 } }
+
+5.- Encontrar empleados de los departamentos de Ventas o Marketing
+
+{ "departamento": { "$in": ["Ventas", "Marketing"] } }
+
+6.- Encontrar empleados que no estén en IT ni en Finanzas
+
+{ "departamento": { "$nin": ["IT", "Finanzas"] } }
+
+7.- Encontrar empleados que tengan el campo "experiencia"
+
+{ "experiencia": { "$exists": true } }
+
+8.- Encontrar empleados con edad entre 30 y 40 años (inclusive)
+
+{ "edad": { $gte: 30, $lte: 40 } }
+
+9.- Encontrar empleados del departamento de IT con salario mayor a 60000
+
+{ "departamento": { "$eq": "IT" } , "salario": { "$gt": 60000 } }
+
+10.- Encontrar empleados que no sean de Ventas y tengan habilidades de "programación" o "diseño gráfico
+
+{ "departamento": { "$ne": "Ventas" } , "habilidades": { "$in": ["programacion", "diseño gráfico"] } }
