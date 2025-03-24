@@ -3,14 +3,6 @@ Uso de filtros en MongoDB
 
 ## Enunciado
 
-# Filtros de Empleados
-
-Este script contiene varios filtros para encontrar empleados de acuerdo a distintos criterios en una base de datos.
-
-## Requisitos
-
-Para ejecutar los filtros, asegúrate de tener acceso a la base de datos que contiene la información de los empleados y que el script esté configurado correctamente para acceder a ella.
-
 ## Filtros
 
 ### 1. Encontrar empleados del departamento de Ventas
